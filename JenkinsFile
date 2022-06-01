@@ -9,7 +9,7 @@ agent any
         //}
         stage ('Build')
         { 
-        echo "building"
+           echo "building"
          // sh 'mvn --version' 
         }
        /* stage ('Test') { 
