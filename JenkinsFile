@@ -1,6 +1,11 @@
 pipeline { 
 agent any 
-    stages { 
+    stages 
+    {
+        stage (Git checkout)
+        {
+            git branch: 'dev', url: 'https://github.com/Avinash-astro/demo.git'
+        }
         stage ('Build')
         { 
           sh 'mvn --version' 
